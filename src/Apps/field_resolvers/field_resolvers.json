@@ -1,0 +1,88 @@
+{
+    "errors" : {
+
+        "general" : {
+            "0" : {
+                "errorType" : null,
+                  "message" : null
+            },
+        "missingParameters" : {
+                "errorType" : "Manifest:Passwordless:missingParameters",
+                  "message" : "Missing parameters"
+            },
+        "invalidParameters" : {
+                "errorType" : "Manifest:Passwordless:invalidParameters",
+                  "message" : "Invalid parameters"
+            },
+           "missingHeaders" : {
+                "errorType" : "Manifest:Passwordless:MissingHeaders",
+                  "message" : "Missing headers"
+            },
+    "invalidJSONParameters" : {
+                "errorType" : "Manifest:Passwordless:invalidJSONparameters",
+                  "message" : "Malformed or missing JSON parameters"
+            },
+    "missingJSONParameters" : {
+                "errorType" : "Manifest:Passwordless:missingJSONparameters",
+                  "message" : "Missing JSON parameters"
+            },
+              "invalidUser" : {
+                "errorType" : "Manifest:Passwordless:invalidUser",
+                  "message" : "Invalid user"
+            },
+               "emailError" : {
+                "errorType" : "Manifest:Passwordless:emailError",
+                  "message" : "Error sending email"
+            },
+                "qrInvalid" : {
+                "errorType" : "Manifest:Passwordless:qrInvalid",
+                  "message" : "Invalid Code"
+            },
+                "qrExpired" : {
+                "errorType" : "Manifest:Passwordless:qrExpired",
+                  "message" : "Code expired"
+            },
+            "invalidQRtype" : {
+                "errorType" : "Manifest:Passwordless:invalidQRtype",
+                  "message" : "Ivalid code type"
+            },
+           "invalidSession" : {
+                "errorType" : "Manifest:Passwordless:InvalidSession",
+                  "message" : "Invalid Session"
+            },
+              "sidNotFound" : {
+                "errorType" : "Manifest:Passwordless:sidNotFound",
+                  "message" : "Session not found"
+            },
+     "invalidAuthorization" : {
+                "errorType" : "Manifest:Passwordless:invalidAuthorization",
+                  "message" : "Invalid Authorization"
+            }
+            
+        }
+        
+    },
+    
+    "metadata" : {
+        "lob" : {
+          "lob_identifier": { 
+              "pretty": "ID",
+               "short": "ID",
+                "type": "text",
+               "size" : 10
+          },
+          "lob_short": { 
+              "pretty": "LOB",
+               "short": "LOB",
+                "type": "text",
+               "size" : 15
+          },
+          "lob_long": { 
+              "pretty": "Line of Business",
+               "short": "Line of Business",
+                "type": "text",
+               "size" : 40
+          }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+# image: node:16.15.1
+image: atlassian/default-image:4
+
+definitions:
+  scripts:
+    - script: &common-setups
+        unset AWS_SECRET_ACCESS_KEY;
+        unset AWS_ACCESS_KEY_ID;
+        export AWS_REGION=us-west-2;
+        export AWS_WEB_IDENTITY_TOKEN_FILE=$(pwd)/web-identity-token;
+        export AWS_ROLE_SESSION_NAME=bitbucket-pipelines;
+        export AWS_ROLE_ARN=arn:aws:iam::553506260656:role/manifest-bitbucket-role;
+        echo $BITBUCKET_STEP_OIDC_TOKEN > $(pwd)/web-identity-token
+    - script: &author-context
+        export MFR_AUTHOR_NAME=felipe    
+        export MFR_GITUPDATE_AUTHOR=$(git log -n 1 --format=format:'%an')    
+    - script: &develop-environment
+        export MFR_DEPLOY_REGION=us-west-2
+        export MFR_DOMAIN_NAME=mvnifest.co
+        export MFR_ENVIRONMENT_NAME=develop       
+
+  steps:
+ 
+    - step: &deploy-develop
+        name: Development Deploy to AWS
+        oidc: true
+        script:
+          - *common-setups
+          - *author-context
+          - *develop-environment 
+          - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" 
+          - unzip awscliv2.zip
+          - ./aws/install 
+          - aws --version
+          - cd .deploy && cd cdk
+          - aws codeartifact login --tool npm --repository cdk_utilities --domain mvnifest --namespace @mainframe
+          - npm ci
+          - npx cdk synth
+          - npx cdk deploy --require-approval never
+
+
+
+pipelines:
+  branches:
+    develop:
+      - step: *deploy-develop

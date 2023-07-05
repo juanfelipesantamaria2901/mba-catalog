@@ -1,0 +1,181 @@
+{
+    "list": {
+        "required_valid_sid": true,
+        "required_valid_auth": true,
+        "required_arguments": {},
+        "required_source": {}
+    },
+    "errors" : {
+
+        "general" : {
+            "0" : {
+                "errorType" : null,
+                  "message" : null
+            },
+        "missingParameters" : {
+                "errorType" : "Manifest:missingParameters",
+                  "message" : "Missing parameters"
+            },
+        "invalidParameters" : {
+                "errorType" : "Manifest:invalidParameters",
+                  "message" : "Invalid parameters"
+            },
+           "missingHeaders" : {
+                "errorType" : "Manifest:MissingHeaders",
+                  "message" : "Missing headers"
+            },
+    "invalidJSONParameters" : {
+                "errorType" : "Manifest:invalidJSONparameters",
+                  "message" : "Malformed or missing JSON parameters"
+            },
+    "missingJSONParameters" : {
+                "errorType" : "Manifest:missingJSONparameters",
+                  "message" : "Missing JSON parameters"
+            },
+"invalidJSONParametersType" : {
+                "errorType" : "Manifest:invalidJSONParametersType",
+                  "message" : "Invalid JSON parameters type"
+            },
+              "invalidUser" : {
+                "errorType" : "Manifest:invalidUser",
+                  "message" : "Invalid user"
+            },
+               "emailError" : {
+                "errorType" : "Manifest:emailError",
+                  "message" : "Error sending email"
+            },
+                "qrInvalid" : {
+                "errorType" : "Manifest:qrInvalid",
+                  "message" : "Invalid Code"
+            },
+                "qrExpired" : {
+                "errorType" : "Manifest:qrExpired",
+                  "message" : "Code expired"
+            },
+            "invalidQRtype" : {
+                "errorType" : "Manifest:invalidQRtype",
+                  "message" : "Ivalid code type"
+            },
+           "invalidSession" : {
+                "errorType" : "Manifest:InvalidSession",
+                  "message" : "Invalid Session"
+            },
+              "sidNotFound" : {
+                "errorType" : "Manifest:sidNotFound",
+                  "message" : "Session not found"
+            },
+     "invalidAuthorization" : {
+                "errorType" : "Manifest:invalidAuthorization",
+                  "message" : "Invalid Authorization"
+            }
+            
+        },
+    
+        "appactivation" : {
+
+        },
+    
+        "authenticate" : {
+            
+        },
+    
+        "session" : {
+
+        },
+    
+        "validate" : {
+        },
+        
+        "webactivation" : {
+
+        }
+    
+    },
+    
+    "metadata" : {
+        "products" : {
+          "SKU": { 
+              "pretty": "SKU",
+               "short": "SKU",
+                "type": "text",
+               "size" : 20
+          },
+          "color": { 
+              "pretty": "Color",
+               "short": "Color",
+                "type": "text",
+               "size" : 6
+          },
+          "package_style": { 
+              "pretty": "Package Style",
+               "short": "Pkg.",
+                "type": "text",
+               "size" : 1
+          }
+        },
+                "style" : {
+          "sku_leader": { 
+              "pretty": "SKU Leader",
+               "short": "Style",
+                "type": "text",
+               "size" : 7
+          },
+          "sku_leader_": { 
+              "pretty": "SKU Leader+",
+               "short": "Style+",
+                "type": "text",
+               "size" : 8
+          },
+          "product_type": { 
+              "pretty": "Product Type",
+               "short": "Product",
+                "type": "text",
+               "size" : 40
+          },
+          "short_description": { 
+              "pretty": "Short Description",
+               "short": "Description",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_1": { 
+              "pretty": "Short Bullet 1",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_2": { 
+              "pretty": "Short Bullet 2",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_3": { 
+              "pretty": "Short Bullet 3",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_4": { 
+              "pretty": "Short Bullet 4",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          
+          "dimension": { 
+              "pretty": "Dimension",
+               "short": "Dimension",
+                "type": "text",
+               "size" : 40
+          },
+          "customs_desc": { 
+              "pretty": "Customs Description",
+               "short": "Customs",
+                "type": "text",
+               "size" : 40
+          }
+        }
+    }
+
+}

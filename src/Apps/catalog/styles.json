@@ -1,0 +1,143 @@
+{
+    "list": {
+        "required_valid_sid": true,
+        "required_valid_auth": true,
+        "required_arguments": {},
+        "required_source": {}
+    },
+    "errors" : {
+
+        "general" : {
+            "0" : {
+                "errorType" : null,
+                  "message" : null
+            },
+        "missingParameters" : {
+                "errorType" : "Manifest:Passwordless:missingParameters",
+                  "message" : "Missing parameters"
+            },
+        "invalidParameters" : {
+                "errorType" : "Manifest:Passwordless:invalidParameters",
+                  "message" : "Invalid parameters"
+            },
+           "missingHeaders" : {
+                "errorType" : "Manifest:Passwordless:MissingHeaders",
+                  "message" : "Missing headers"
+            },
+    "invalidJSONParameters" : {
+                "errorType" : "Manifest:Passwordless:invalidJSONparameters",
+                  "message" : "Malformed or missing JSON parameters"
+            },
+    "missingJSONParameters" : {
+                "errorType" : "Manifest:Passwordless:missingJSONparameters",
+                  "message" : "Missing JSON parameters"
+            },
+              "invalidUser" : {
+                "errorType" : "Manifest:Passwordless:invalidUser",
+                  "message" : "Invalid user"
+            },
+               "emailError" : {
+                "errorType" : "Manifest:Passwordless:emailError",
+                  "message" : "Error sending email"
+            },
+                "qrInvalid" : {
+                "errorType" : "Manifest:Passwordless:qrInvalid",
+                  "message" : "Invalid Code"
+            },
+                "qrExpired" : {
+                "errorType" : "Manifest:Passwordless:qrExpired",
+                  "message" : "Code expired"
+            },
+            "invalidQRtype" : {
+                "errorType" : "Manifest:Passwordless:invalidQRtype",
+                  "message" : "Ivalid code type"
+            },
+           "invalidSession" : {
+                "errorType" : "Manifest:Passwordless:InvalidSession",
+                  "message" : "Invalid Session"
+            },
+              "sidNotFound" : {
+                "errorType" : "Manifest:Passwordless:sidNotFound",
+                  "message" : "Session not found"
+            },
+     "invalidAuthorization" : {
+                "errorType" : "Manifest:Passwordless:invalidAuthorization",
+                  "message" : "Invalid Authorization"
+            }
+            
+        }
+        
+    },
+    
+    "metadata" : {
+        "style" : {
+          "sku_leader": { 
+              "pretty": "SKU Leader",
+               "short": "Style",
+                "type": "text",
+               "size" : 7
+          },
+          "sku_leader_": { 
+              "pretty": "SKU Leader+",
+               "short": "Style+",
+                "type": "text",
+               "size" : 8
+          },
+          "product_type": { 
+              "pretty": "Product Type",
+               "short": "Product",
+                "type": "text",
+               "size" : 40
+          },
+          "short_description": { 
+              "pretty": "Short Description",
+               "short": "Description",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_1": { 
+              "pretty": "Short Bullet 1",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_2": { 
+              "pretty": "Short Bullet 2",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_3": { 
+              "pretty": "Short Bullet 3",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          "short_bullet_4": { 
+              "pretty": "Short Bullet 4",
+               "short": "Bullet 1",
+                "type": "multiline",
+               "size" : 40
+          },
+          
+          "dimension": { 
+              "pretty": "Dimension",
+               "short": "Dimension",
+                "type": "text",
+               "size" : 40
+          },
+          "customs_desc": { 
+              "pretty": "Customs Description",
+               "short": "Customs",
+                "type": "text",
+               "size" : 40
+          },
+              "images": { 
+              "pretty": "Style Images",
+               "short": "Images",
+                "type": "image",
+               "size" : null
+          }          
+        }
+    }
+}

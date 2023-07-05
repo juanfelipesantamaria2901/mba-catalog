@@ -1,0 +1,27 @@
+{
+    "identity": {}, 
+    "source": null, 
+    "prev": null, 
+    "info": {}, 
+    "stash": {}, 
+    "arguments": {
+        "command": "catalog.styles.list",
+        "filters" : 
+          [
+            { "mode" : "CONTAINS", "arguments" : ["GIRSUM"] },
+            { "mode" : "LOB_IN", "arguments" : ["GIR"] },
+            { "mode" : "PAGE", "arguments_num" : [1,5] }
+          ],
+        "meas_filter" : 
+          [
+            { "mode" : "EXACT", "arguments" : ["PK"] }
+          ]
+      }, 
+        "request": {
+            "headers": {
+                "authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0eXBlIjoiYXV0aG9yaXphdGlvbiIsImlkIjoicHI2eEFtd0xlajdjNDRIM2tKdmNaSEUweDBfQjNiaDZ0LU9VUWw5ZUY4cyIsInNpZCI6IkhVaHRJSDRsZjVZNW1kcXFhNE5iOE9Ja2RfMTRPSWtBc1VELWRxQl9LN1kiLCJleHBpcmVfb24iOjB9.1tr-oYyPRgK3kuiQpZ7r0umCWZVfNc-ch2zTErBCcdA", 
+                "sid": "HUhtIH4lf5Y5mdqqa4Nb8OIkd_14OIkAsUD-dqB_K7Y", 
+                "requestContext": {}
+                }
+            }
+}
